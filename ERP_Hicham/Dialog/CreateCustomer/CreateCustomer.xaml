@@ -1,0 +1,27 @@
+﻿<Window x:Class="ERP_Hicham.Dialog.CreateCustomer.CreateCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERP_Hicham.Dialog.CreateCustomer"
+        mc:Ignorable="d"
+        Title="Erstellen" Height="344" Width="367" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="MainGrid">
+        <Label Content="Kunde erstellen" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="128" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="5,96,0,0" VerticalAlignment="Top" Width="125" Foreground="#FF525252" Height="23" />
+        <TextBox x:Name="Lastname_input" HorizontalAlignment="Left" Margin="10,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24"/>
+        <Label Content="Vorname" HorizontalAlignment="Left" Margin="188,96,0,0" VerticalAlignment="Top" Width="124" Foreground="#FF525252" Height="23" />
+        <TextBox x:Name="Firstname_input" HorizontalAlignment="Left" Margin="192,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24"/>
+        <Label Content="Strasse" HorizontalAlignment="Left" Margin="5,157,0,0" VerticalAlignment="Top" Width="125" Foreground="#FF525252" Height="24" />
+        <TextBox x:Name="Address_input" HorizontalAlignment="Left" Margin="10,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24"/>
+        <Label Content="Ort" HorizontalAlignment="Left" Margin="188,158,0,0" VerticalAlignment="Top" Width="124" Foreground="#FF525252" Height="23" />
+        <TextBox x:Name="City_input" HorizontalAlignment="Left" Margin="192,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24"/>
+        <Label x:Name="State_lable" Content="Land" HorizontalAlignment="Left" Margin="5,207,0,0" VerticalAlignment="Top" Width="125" Foreground="#FF525252" Height="24" />
+        <TextBox x:Name="State_input" HorizontalAlignment="Left" Margin="10,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24"/>
+        <Label x:Name="Cooperation_lable" Content="Firma" HorizontalAlignment="Left" Margin="5,48,0,0" VerticalAlignment="Top" Width="125" Foreground="#FF525252" Height="23" />
+        <TextBox x:Name="Cooperation_input" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24"/>
+        <Button Content="Erstellen" HorizontalAlignment="Left" Margin="167,275,0,0" VerticalAlignment="Top" Height="24" Width="86" FontWeight="Bold" Click="Button_Click_1"/>
+        <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="258,275,0,0" VerticalAlignment="Top" Height="24" Width="86" Click="Button_Click"/>
+
+    </Grid>
+</Window>

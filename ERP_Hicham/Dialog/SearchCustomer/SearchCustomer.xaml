@@ -1,0 +1,30 @@
+﻿<Window x:Class="ERP_Hicham.Dialog.SearchCustomer.SearchCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERP_Hicham.Dialog.SearchCustomer"
+        mc:Ignorable="d"
+        Title="Suchen" Height="452" Width="365" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Kuden Suchen" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="SearchType_ComboBox" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem IsSelected="True">Name</ComboBoxItem>
+            <ComboBoxItem>Firma</ComboBoxItem>
+            <ComboBoxItem>ID</ComboBoxItem>
+            <ComboBoxItem>BillID</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="Search_Input" HorizontalAlignment="Left" Margin="135,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="22" TextChanged="Search_Input_TextChanged"/>
+        <ListView Margin="10,71,0,0" Name="lvUsers" Width="325" HorizontalAlignment="Left" SelectionChanged="lvUsers_SelectionChanged" VerticalAlignment="Top" Height="307">
+            <ListView.View>
+                <GridView AllowsColumnReorder="True">
+                    <GridViewColumn Header="ID" Width="20" DisplayMemberBinding="{Binding ID}" />
+                    <GridViewColumn Header="Firma" Width="100" DisplayMemberBinding="{Binding Cooperation}" />
+                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding LastName}" />
+                    <GridViewColumn Header="Vorname" Width="100" DisplayMemberBinding="{Binding FirstName}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="Search_Button" Content="Auswählen" HorizontalAlignment="Left" Margin="263,383,0,0" VerticalAlignment="Top" Width="72" Height="21.96" Click="Search_Button_Click"/>
+    </Grid>
+</Window>
