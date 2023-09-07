@@ -4,7 +4,7 @@
 <h3 align="center">ERP_Hicham</h3>
 
   <p align="center">
-    ERP_Hicham is a school project. Its a small slice of an ERP application developed using Windows WPF and MySQL. This application enables the create and manage Products, Orders and Customers.
+    ERP_Hicham is a school project. It’s a small slice of an ERP application developed using Windows WPF and MySQL. This application enables the management of products, orders, and customers.
     <br />
     <a href="https://github.com/BrokenMesh/ERP_Hicham/issues">Report Bug</a>
     ·
@@ -37,7 +37,7 @@
 
 5. **Configuration**
 
-   The MainWindow (MainWindow.xaml.cs) Constrokutr is where the MySQL Configuration is defined. It must be changed to your MySQL settigns.  
+   The MainWindow (MainWindow.xaml.cs) Constructor is where the MySQL Configuration is defined. It must be changed to your MySQL settings  
 
 <!-- LICENSE -->
 ## License
